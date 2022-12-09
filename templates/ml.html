@@ -7,7 +7,8 @@
     <meta charset=utf-8> </head>
     <body>
         <h1>Guess what, I learned me some Flask! I'm using an sklearn Regression Model</h1>
-        <p>How danceable is your song? Fill in the values to find out. Each field will be a decimal between 0 and 1 where 0 means least and 1 means most (relative to other songs).</p>
+        <p>How danceable is your song? Fill in the values to find out. Each field will be a decimal between 0 and 1 where 0 means least and 1 means most (relative to other songs).<br>
+        My model was trained on this dataset: https://www.kaggle.com/datasets/yasserh/song-popularity-dataset</p>
         
         <form action="{{ url_for("home")}}" method="post">
           <label for="popularity">Popularity:</label><br>
