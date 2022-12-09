@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  
+  <head><title>Test</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset=utf-8> </head>
+    <body>
+        <h1>Guess what, I learned me some Flask! I'm using an sklearn Regression Model</h1>
+        <p>How danceable is your song? Fill in the values to find out. Each field will be a decimal between 0 and 1 where 0 means least and 1 means most (relative to other songs).</p>
+        
+        <form action="{{ url_for("home")}}" method="post">
+          <label for="popularity">Popularity:</label><br>
+          <input type="float" id="popularity" name="popularity" value=0.5><br>
+          
+          <label for="duration_ms">Song Duration:</label><br>
+          <input type="float" id="duration_ms" name="duration_ms" value=0.5><br><br>
+          
+          <label for="acoustic">Acousticness:</label><br>
+          <input type="float" id="acoustic" name="acoustic" value=0.5><br>
+          
+          <label for="energy">Energy</label><br>
+          <input type="float" id="energy" name="energy" value=0.5><br><br>
+          
+          <label for="instrumentalness">Instrumentalness</label><br>
+          <input type="float" id="instrumentalness" name="instrumentalness" value=0.5><br>
+          
+          <label for="liveness">Liveness</label><br>
+          <input type="float" id="liveness" name="liveness" value=0.5><br><br>
+          
+          <label for="loudness">Loudness</label><br>
+          <input type="float" id="loudness" name="loudness" value=0.5><br>
+          
+          <label for="speechiness">Speechiness</label><br>
+          <input type="float" id="speechiness" name="speechiness" value=0.5><br><br>
+          
+          <label for="tempo">Song Speed (bpm)</label><br>
+          <input type="float" id="tempo" name="tempo" value=0.5><br>
+          
+          <label for="audio_valence">Audio valance</label><br>
+          <input type="float" id="audio_valence" name="audio_valence" value=0.5><br>
+          
+          
+          <input type="submit" value="Submit">
+        </form> 
+
+        
+
+        <footer>
+          <p>Author: Sam Carpenter</p>
+          <p><a href="https://github.com/scarpenter7/CreativeProject5">GitHub Repo</a></p>
+        </footer>
+    </body>
+</html>
